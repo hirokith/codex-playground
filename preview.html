@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>企业优惠卡预览</title>
+    <script>
+      tailwind = tailwind || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              card: '0 18px 40px rgba(28, 59, 125, 0.12)',
+            },
+            colors: {
+              cardBorder: '#e8edf6',
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system,
+          BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #1f2f52;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f6f8fb;
+        padding: 48px 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="w-full max-w-md">
+      <div
+        class="mx-auto rounded-2xl bg-white shadow-card border border-cardBorder/70 overflow-hidden"
+      >
+        <div class="bg-[#f3f7ff] px-6 pt-6 pb-4 text-center relative">
+          <div class="absolute inset-x-10 bottom-0 h-12 rounded-full bg-white blur-2xl opacity-60"></div>
+          <div
+            class="relative inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#64b7ff] to-[#2e78ff] px-6 py-2 text-white text-base font-semibold shadow-[0_10px_20px_rgba(46,120,255,0.35)]"
+          >
+            企业专项优惠
+          </div>
+        </div>
+
+        <div class="px-6 pb-7 pt-5">
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="flex flex-col items-center gap-3">
+            <div
+              class="h-14 w-14 rounded-full bg-gradient-to-b from-[#fbe9b5] to-[#f6cf65] flex items-center justify-center shadow-[0_6px_12px_rgba(244,192,63,0.35)]"
+            >
+              <div
+                class="relative h-9 w-9 rounded-full bg-gradient-to-b from-[#ffd978] to-[#f7b94a] flex items-center justify-center"
+              >
+                <div class="absolute inset-0 rounded-full border border-white/60"></div>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 16l5-5 3 3 7-7" />
+                  <path d="M16 7h3v3" />
+                  <path d="M4 20h6" />
+                </svg>
+              </div>
+            </div>
+              <div class="flex flex-col gap-1">
+                <span class="text-[15px] font-semibold text-[#2c3c5b]"
+                  >生意增长</span
+                >
+                <span class="text-xs text-[#6b7a99]">支持餐补消费</span>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3">
+            <div
+              class="h-14 w-14 rounded-full bg-gradient-to-b from-[#b2f0e8] to-[#65d1c8] flex items-center justify-center shadow-[0_6px_12px_rgba(92,189,177,0.32)]"
+            >
+              <div
+                class="h-9 w-9 rounded-full border-2 border-white/70 flex items-center justify-center bg-white/10"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 9.5a2.5 2.5 0 0 1 2.5-2.5H18a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6.5A2.5 2.5 0 0 1 4 14.5Z" />
+                  <path d="M8 7v10" />
+                  <path d="M16.5 10.5h-1.5" />
+                  <path d="M16.5 13.5h-1.5" />
+                  <path d="M5.5 7a2 2 0 0 0 0-4" />
+                </svg>
+              </div>
+            </div>
+              <div class="flex flex-col gap-1">
+                <span class="text-[15px] font-semibold text-[#2c3c5b]"
+                  >灵活营销</span
+                >
+                <span class="text-xs text-[#6b7a99]">支持员工专项折扣</span>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3">
+            <div
+              class="h-14 w-14 rounded-full bg-gradient-to-b from-[#d6eaff] to-[#7bb3ff] flex items-center justify-center shadow-[0_6px_12px_rgba(64,134,231,0.3)]"
+            >
+              <div
+                class="relative h-9 w-9 rounded-full bg-gradient-to-b from-white to-[#e9f2ff] flex items-center justify-center"
+              >
+                <div class="absolute inset-0 rounded-full border border-[#c8dcff]"></div>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5 text-[#3b7cff]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 21s6.5-6 6.5-11A6.5 6.5 0 1 0 5.5 10c0 5 6.5 11 6.5 11z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                  <path d="M12 4.5v-2" />
+                  <path d="M7 10H5" />
+                  <path d="M19 10h-2" />
+                </svg>
+              </div>
+            </div>
+              <div class="flex flex-col gap-1">
+                <span class="text-[15px] font-semibold text-[#2c3c5b]"
+                  >精准锁客</span
+                >
+                <span class="text-xs text-[#6b7a99]">精准圈定附近企业</span>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="mt-8 w-full rounded-full bg-gradient-to-r from-[#59b4ff] to-[#2c70ff] py-3.5 text-white text-lg font-semibold shadow-[0_12px_18px_rgba(44,112,255,0.35)] transition-transform hover:-translate-y-0.5"
+          >
+            联系销售
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
